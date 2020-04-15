@@ -9,9 +9,15 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+
+import javax.sql.DataSource;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+
 @Configuration
 @EnableWebMvc
-@ComponentScan("main.java.rgf.web")
+//@ComponentScan("main.java.rgf.web")
+@ComponentScan("main.java.rgf")
 public class WebConfig extends WebMvcConfigurerAdapter{
 
 	@Bean
@@ -24,7 +30,7 @@ public class WebConfig extends WebMvcConfigurerAdapter{
 		return resolver;
 
 	}
-
+  
 	@Override
 	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
 		configurer.enable();

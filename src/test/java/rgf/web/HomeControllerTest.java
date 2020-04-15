@@ -11,7 +11,7 @@ public class HomeControllerTest {
 
   @Test
   public void testHomePage() throws Exception {
-    main.java.rgf.web.HomeController controller = new main.java.rgf.web.HomeController();
+    main.java.rgf.controller.HomeController controller = new main.java.rgf.controller.HomeController();
     MockMvc mockMvc = standaloneSetup(controller).build();
     mockMvc.perform(get("/"))
            .andExpect(view().name("home"));

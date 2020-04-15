@@ -9,10 +9,7 @@
 <title>Risk Assessment Spring MVC</title>
 </head>
 <body>
-	<h1 style="color: green; text-align: center;">${name}</h1>
-	<h3 style="color: orange; text-align: center;">${greetings}</h3>
-    <a href="<c:url value="/spittles" />">Run Risk Assessment</a> | 
-    <a href="<c:url value="/spitter/register" />">View Risk Assessment</a>
+	<% response.sendRedirect("employee"); %>
   </body>
 </html>
 

@@ -1,4 +1,4 @@
-package main.java.rgf.web;
+package main.java.rgf.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 import org.springframework.stereotype.Controller;
